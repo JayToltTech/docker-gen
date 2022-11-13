@@ -28,4 +28,7 @@ COPY --from=go-builder /build/docker-gen /usr/local/bin/docker-gen
 # Copy the license
 COPY LICENSE /usr/local/share/doc/docker-gen/
 
+# Copy the nginx template
+COPY templates/nginx.tmpl /etc/docker-gen/templates/nginx.tmpl
+
 ENTRYPOINT ["/usr/local/bin/docker-gen"]
