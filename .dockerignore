@@ -6,4 +6,5 @@ examples
 Makefile
 README.md
 templates
+!templates/nginx.tmpl
 *.gz
